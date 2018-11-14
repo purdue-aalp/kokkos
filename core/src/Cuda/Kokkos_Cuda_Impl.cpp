@@ -662,7 +662,7 @@ void CudaInternal::finalize()
 
     RecordCuda::decrement( RecordCuda::get_record( m_scratchFlags ) );
     RecordCuda::decrement( RecordCuda::get_record( m_scratchSpace ) );
-    RecordHost::decrement( RecordHost::get_record( m_scratchUnified ) );
+    //RecordHost::decrement( RecordHost::get_record( m_scratchUnified ) );
     RecordCuda::decrement( RecordCuda::get_record( m_scratchConcurrentBitset ) );
 
     m_cudaDev             = -1 ;
